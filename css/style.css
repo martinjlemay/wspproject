@@ -5,19 +5,61 @@ Copyright 2013, Josh Cope
 
 /* =============================================================================
    Site Styles
+ 
   ========================================================================== */
+
+body{
+	margin: 0 auto;
+	width: 996px;
+	background-color: #ffffff;
+	background-image:url(../images/bgimage.jpg);
+	background-repeat: no-repeat;
+	background-position:top center;
+}
+nav ul{
+	max-width: 100%;
+	float: right;
+	list-style: none;
+	text-decoration: none;
+	padding: 0;
+	text-align: center;
+}
 nav li {
-	display: inline;
+	display: inline; 
+	text-align: center;
+	color: #fff;
+	background-color: #6f83ad;
+	border: 1px solid #000;
+	padding: 10px 20px;
+	float: right;
+	width: 100px;
+	height: 30px;
+	margin: 0 auto;
 }
-/*article {
-	outline: 1px solid red;
+nav li a{
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	text-shadow: 2px 2px 2px #000;
+	display: block;
+	line-height: 30px;
 }
-aside {
-	outline: 1px solid red;
+nav li:hover{
+	background-color: green;
 }
-section {
-	outline: 1px solid red;
-}*/
+nav li:active{
+	background-color: #a34ea4;
+}
+nav li:focus{
+	background-color: #a34ea4;
+}
+	
+}
+logo{
+	float: left;
+	
+}
+	 
 /* =============================================================================
    Page Styles
    ========================================================================== */
