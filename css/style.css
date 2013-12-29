@@ -9,32 +9,29 @@ Copyright 2013, Josh Cope
   ========================================================================== */
 
 body{
+	font-family: arial,helvetica,sans-serif;
 	margin: 0 auto;
 	width: 996px;
-	background-color: #ffffff;
-	background-image:url(../images/bgimage.jpg);
-	background-repeat: no-repeat;
-	background-position:top center;
+	background: url(../images/bgimage.jpg) center top no-repeat fixed #ffffff;
+	text-align: 1em;
+	height: auto;
+	position: relative;
 }
 nav ul{
 	max-width: 100%;
-	float: right;
 	list-style: none;
-	text-decoration: none;
 	padding: 0;
-	text-align: center;
+	overflow: hidden;
 }
 nav li {
-	display: inline; 
-	text-align: center;
-	color: #fff;
+	
+	text:1em center #000;
 	background-color: #6f83ad;
 	border: 1px solid #000;
 	padding: 10px 20px;
 	float: right;
 	width: 100px;
-	height: 30px;
-	margin: 0 auto;
+	
 	box-shadow: 0px 3px 5px #000;
 }
 nav li a{
@@ -45,17 +42,20 @@ nav li a{
 	display: block;
 	line-height: 30px;
 }
-nav li:hover{
-	background-color: green;
-}
-nav li:active{
-	background-color: #a34ea4;
+nav li a:hover{
+	background-color: #fff;
+	color: #000;
 }
 nav li:focus{
 	background-color: #a34ea4;
 }
-	
+nav li:hover{
+	background-color: #fff;
 }
+nav li:active {
+	background-color: #a34ea4 ;
+}
+
 logo{
 	float: left;	
 }
@@ -68,12 +68,24 @@ fieldset {
 }
 input{
 	box-shadow: 0px 3px 5px #000;
+	margin-bottom: 10px;
 }
+footer {
+	text-align: center;
+}
+
 	 
 /* =============================================================================
    Page Styles
    ========================================================================== */
-
+.sick_home {
+	float: none;
+	margin: 0 auto;
+	text-align: center;
+}
+.equipment {
+	text-align: center;
+}
 /* =============================================================================
    Media Queries
    ========================================================================== */
@@ -82,7 +94,8 @@ input{
 @media only screen and (min-width: 768px) and (max-width: 995px) {}
 
 /* All Mobile Sizes */
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+}
 
 /* Mobile Landscape Size to Tablet Portrait */
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
