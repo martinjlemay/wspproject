@@ -13,65 +13,92 @@ body{
 	margin: 0 auto;
 	width: 996px;
 	background: url(../images/bgimage.jpg) center top no-repeat fixed #ffffff;
-	text-align: 1em;
-	height: auto;
-	position: relative;
+	background-size: 1400px;
+	font-size: 1em;
+}
+.logobox {
+	width: 24.0963855%;
+	min-width: 15%;
+	margin-top: 20px;
+	float: left;
+	clear: left;
+	}
+.logo {
+	max-width: 100%;
+}
+nav .current {
+	background-color:  #b26bb3;
 }
 nav ul{
-	
 	width:60.2409639%;
 	max-width: 600px;
 	list-style: none;
 	padding: 0;
-	overflow: hidden;
 	float: right;
+	
 }
 nav li {
-	
-	text:1em center #000;
+	text-align:center;
 	background-color: #6f83ad;
 	border: 1px solid #000;
-	padding: 10px 20px;
-	float: right;
-	max-width: 16.6666667%;
+	float: left;
 	box-shadow: 0px 3px 5px #000;
+	display: inline-block;
+	width: 98px;
 }
 nav a{
 	text-decoration: none;
 	color: #fff;
 	text-align: center;
 	text-shadow: 2px 2px 2px #000;
-	display: block;
 	line-height: 30px;
+	max-width: 16.6666667%;
+	font-size: 1em;
+	width: auto;
 }
-nav li a:hover{
+nav a:link {
+	text-decoration: none;
+	color: #fff;
+}
+nav a:visited {
+	color: blue;
+}
+nav a:hover {
 	background-color: #fff;
 	color: #000;
 }
-nav li:focus{
+nav a:active {
+	color: #fff;
 	background-color: #a34ea4;
 }
-nav li:hover{
+nav li:focus {
+	background-color: #a34ea4;
+}
+nav li:hover {
 	background-color: #fff;
 }
 nav li:active {
 	background-color: #a34ea4 ;
 }
-
-logo{
-	float: left;
-	padding-top:1em;	
+nav li .current {
+	background-color: #b26bb3;
 }
-.faqlower{
-	margin-top: 20px;
-	background-color: gray;
+.title {
+	clear: both;
 }
-fieldset {
-	box-shadow: 0px 3px 5px #000;
+form {
+	text-align: left;
+	margin: 0 auto;
 }
 input{
 	box-shadow: 0px 3px 5px #000;
 	margin-bottom: 10px;
+}
+input:focus {
+	background-color: #edfd1d;
+}
+textarea:focus {
+	background-color: #edfd1d;
 }
 footer {
 	text-align: center;
@@ -81,6 +108,9 @@ footer {
 /* =============================================================================
    Page Styles
    ========================================================================== */
+.paypal {
+	text-align: center;
+}
 .sick_home {
 	float: none;
 	margin: 0 auto;
@@ -89,22 +119,102 @@ footer {
 .equipment {
 	text-align: center;
 }
+.faqlower {
+	margin-top: 20px;
+	text-align: center;
+}
+button {
+	background-color: #454e72;
+	border: 1px none #333;
+	border-radius: 23.5px;
+	width: 227px;
+	height: 47px;
+	color: #ffffff;
+	font: 26pt "Arial Black";
+	-moz-box-shadow: 3px 3px 3px #1f1b1b, /*bottom external highlight*/
+	0 -1px 1px #666, /*top external shadow*/ 
+	inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/ 
+	inset 0 1px 1px rgba(255,255,255,0.8);
+	box-shadow: 3px 3px 3px #1f1b1b, /*bottom external highlight*/
+	0 -1px 1px #666, /*top external shadow*/ 
+	inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/ 
+	inset 0 1px 1px rgba(255,255,255,0.8); /*top internal highlight*/
+	text-shadow: 0 1px 2px #000, 3px 3px 3px #1f1b1b, /*bottom external highlight*/
+	0 -1px 1px #666, /*top external shadow*/ 
+	0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/ 
+	0 1px 1px rgba(255,255,255,0.8); /*top internal highlight*/
+	text-align: center;
+	white-space: normal;
+	line-height: 30px;
+}
+button:hover {
+	color: gray;
+	opacity: 0.85;
+	background-color: #424f72;
+}
+button:active {
+	color: rgba(204, 199, 199, 0.48);
+}
 /* =============================================================================
    Media Queries
    ========================================================================== */
 
 /* Tablet Portrait size to Base 996px */
-@media only screen and (min-width: 768px) and (max-width: 995px) {}
+@media only screen and (min-width: 768px) and (max-width: 995px) {	
+body {
+	float: none;
+	width: auto;
+}
+
+}
 
 /* All Mobile Sizes */
 @media only screen and (max-width: 767px) {
 }
 
 /* Mobile Landscape Size to Tablet Portrait */
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+body{
+	width: auto;
+	float: none;
+}}
 
 /* Mobile Portrait Size to Mobile Landscape Size */
-@media only screen and (max-width: 479px) {}
+@media only screen and (max-width: 479px) {
+body{
+	width: auto;
+	float: none;	
+}
+nav ul {
+	margin: auto;
+	clear: both;	
+	float: none;
+}
+nav li {
+	float: none;
+	clear: both;
+	display: block;
+	margin-top: 10px;
+	max-height: 32px;
+	width: auto;
+}
+nav a {
+font-size: 1em;
+width: auto;
+}
+h1 {
+	font-size: 1.75em;
+}
+aside {
+	float: right;
+}
+.logobox {
+	float: none;
+	margin: 10px auto;
+	width: 50%;
+	
+}
+}
 
 
 /* =============================================================================
